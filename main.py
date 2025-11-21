@@ -43,7 +43,7 @@ response = client.models.generate_content(
         response_schema=Findings,
     ),
     contents=[
-        'Extract vulnerabilities from the provided penetration report and list the data about them in the required answer format. If there many vulnerabilities, make a list of the objects. Extract all vulnerabilities from the report',
+        'Extract vulnerabilities from the provided penetration report and list the data about them in the required answer format. If there are many vulnerabilities, make a list of the objects. Extract all vulnerabilities from the report',
         types.Part.from_bytes(data=image_bytes, mime_type=YOUR_PDF_MIME_TYPE),
     ],
 )
